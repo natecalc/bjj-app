@@ -11,7 +11,9 @@ createRoot(document.getElementById("root")!).render(
 function App() {
   return (
     <main>
-      <div className="w-full bg-red-400 items-center text-center p-12">GM</div>
+      <div className="w-full bg-red-400 items-center text-center p-12">
+        GM TEST
+      </div>
     </main>
   );
 }
