@@ -67,5 +67,3 @@ Many restaurants struggle with efficiently collecting, organizing, and leveragin
 Contributions are welcome! Please check our issues page for current tasks and guidelines.
 
 ## 📄 License
-
-[Your chosen license - e.g., MIT]
