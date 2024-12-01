@@ -1,0 +1,19 @@
+# Dependency directories
+node_modules/
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+
+# Miscellaneous
+.DS_Store
+*.log
+
+# IDE folders
+.vscode/
+.idea/
+
+# Bun specific
+.bun/
