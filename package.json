@@ -1,0 +1,13 @@
+{
+  "name": "restaurant-phone-directory",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "frontend": "bun --cwd frontend run dev",
+    "backend": "bun --cwd backend run dev",
+    "start": "bun run frontend & bun run backend"
+  }
+}
