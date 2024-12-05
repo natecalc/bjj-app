@@ -1,16 +1,12 @@
 # Restaurant Phone Directory
 
-## 🍽️ Project Overview
+## Project Overview
 
-A comprehensive digital solution for restaurants and cafes to manage and utilize customer phone numbers for targeted marketing and promotions.
+A simple and effective BJJ class feedback form. Students scan their gym's custom QR code which then submits an anonymous form giving feedback on positives, areas of improvement, questions or concerns around BJJ classes. The gym owners/coaches will receive a weekly email digest of their class feedback. 
 
 ## 🚀 Purpose
 
-Many restaurants struggle with efficiently collecting, organizing, and leveraging customer contact information. This application provides a streamlined platform to:
-
-- Securely store customer phone numbers
-- Manage restaurant contact lists
-- Facilitate mass text message marketing campaigns
+Many BJJ gyms could be run more tailored to their students. Often times students feel uncomfrtable giving their coaches feedback, or raising concerns about the gym, training methods, or other students. We are helping mitigate this uncomfortable yet important step in the process of improving your BJJ gym experience. 
 
 ## 🛠️ Tech Stack
 
@@ -32,13 +28,6 @@ Many restaurants struggle with efficiently collecting, organizing, and leveragin
 
 - PostgreSQL for robust, scalable data storage
 
-## 📋 Key Features
-
-- Add and manage restaurant contact lists
-- Secure phone number storage
-- Easy-to-use interface for restaurant staff
-- Potential future expansion for SMS marketing integration
-
 ## 🔧 Local Development Setup
 
 ### Prerequisites
@@ -54,16 +43,3 @@ Many restaurants struggle with efficiently collecting, organizing, and leveragin
 3. Set up PostgreSQL database
 4. Configure environment variables
 5. Run `bun start` to launch both frontend and backend
-
-## 🌐 Future Roadmap
-
-- SMS marketing integration
-- Customer segmentation
-- Analytics dashboard
-- Multi-restaurant support
-
-## 👥 Contributing
-
-Contributions are welcome! Please check our issues page for current tasks and guidelines.
-
-## 📄 License
