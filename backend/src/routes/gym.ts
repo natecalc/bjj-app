@@ -66,4 +66,44 @@ export const gym = new Elysia({ prefix: "/gym" })
         password: t.String({ minLength: 6 }),
       }),
     }
+  )
+  .post(
+    "/login",
+    async ({ body }) => {
+      const { email, password } = body;
+
+      const result = await pool.query(
+        /*sql*/ `
+      SELECT * FROM gyms 
+      WHERE email = $1;
+    `,
+        [email]
+      );
+
+      if (result.rows.length === 0) {
+        throw new Error("Invalid credentials");
+      }
+
+      const gym = result.rows[0];
+      const validPassword = await bcrypt.compare(password, gym.password);
+
+      if (!validPassword) {
+        throw new Error("Invalid credentials");
+      }
+
+      return {
+        success: true,
+        gym: {
+          id: gym.id,
+          name: gym.name,
+          email: gym.email,
+        },
+      };
+    },
+    {
+      body: t.Object({
+        email: t.String(),
+        password: t.String(),
+      }),
+    }
   );
