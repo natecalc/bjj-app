@@ -1,11 +1,12 @@
 services:
   postgres:
     image: postgres:15
-    container_name: restaurant-app-db
+    container_name: bjj-feedback-db
+    restart: always
     environment:
-      POSTGRES_DB: restaurantdb
-      POSTGRES_USER: restaurantuser
-      POSTGRES_PASSWORD: restaurantpassword
+      POSTGRES_USER: bjjuser
+      POSTGRES_PASSWORD: bjjfeedback
+      POSTGRES_DB: bjjfeedback
     ports:
       - "5432:5432"
     volumes:
