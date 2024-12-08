@@ -17,7 +17,7 @@
     "db:seed:undo": "sequelize-cli db:seed:undo"
   },
   "dependencies": {
-    "@elysiajs/cors": "^0.8.0",
+    "@elysiajs/cors": "^1.1.1",
     "@elysiajs/swagger": "^1.1.6",
     "bcrypt": "^5.1.1",
     "dotenv": "^16.4.5",
